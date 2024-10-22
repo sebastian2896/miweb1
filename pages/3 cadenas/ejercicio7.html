@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar caracteres específicos</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Eliminar caracteres específicos</h1>
+        <h2>codigo : javascript<br>
+            //1.Declarar la variable cadena,caracter y nueva cadena<br>
+            let cadena = "Hola Mundo";<br>
+            let caracter="o";<br>
+            let nuevacadena=""<br>
+            //2.usar un bucle for para recorrer la cadena<br>
+            for (let i = 0; i < cadena.length; i++) {<br>
+            //3.Si el carácter actual no es igual a caracter, añadirlo a nuevaCadena. <br>
+            if (cadena[i] !== caracter) { <br>
+                nuevaCadena += cadena[i]; <br>
+            } <br>
+            } <br>
+                console.log(nuevaCadena);  <br>
+          
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formCadena">
+                <input type="text" id="cadena" placeholder="Ingresa una cadena">
+                <input type="text" id="caracterAEliminar" placeholder="Ingresa el caracter a eliminar">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.eliminarCaracter()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenucadena()">Regresar</button>
+                </div>
+                <div id="resultado">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

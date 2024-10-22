@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplos de 5 en un arreglo</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Promedio de un arreglo</h1>
+        <h2>codigo : javascript<br>
+           <br> let numeros = [10, 15, 23, 30, 45, 50];
+           <br> let suma = 0;
+           <br> for (let i = 0; i < numeros.length; i++) { //1 itera a través del arreglo
+           <br> suma += numeros[i]; //2 suma cada número al total.
+           <br> }
+           <br> let promedio = suma / numeros.length; //3 calcula el promedio.
+           <br> console.log("El promedio es " + promedio);
+           <br> }<br>
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form>
+                <input type="text" id="num" placeholder="Ingresa los números del arreglo separados por comas">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.PromedioArray()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuArreglos()">Regresar</button>
+
+                </div>
+                <div id="resp">
+                    Aquí se mostrarán el promedio
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

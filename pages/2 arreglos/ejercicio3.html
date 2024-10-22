@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de los elementos de un arreglo</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Mayor de los elementos de un arreglo</h1>
+        <h2>codigo : javascript<br>
+            //1. Declarar un arreglo de números ingresado por el usuario<br>
+            let numeros = [10, 15, 23, 30, 45, 50];<br>
+            //2.supone que el primer elemento es el mayor.<br>
+            let mayor = numeros[0];<br>
+            //3.Usar un bucle for para comparar cada elemento con el supuesto mayor e itera desde el segundo.<br>
+            for (let i = 1; i < numeros.length; i++) {<br>
+            //4.actualiza mayor si se encuentra un número más grande<br>
+            if (numeros[i] > mayor) {<br>
+            mayor = numeros[i];<br>
+                }<br>
+               }<br>
+                console.log("El mayor número es " + mayor);<br>
+                
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formMayorNumero">
+                <input type="text" id="numeros" placeholder="Ingresa los números del arreglo separados por comas">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.mayorNumero()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuArreglos()">Regresar</button>
+
+                </div>
+                <div id="resultadoMayorNumero">
+                    Aquí se mostrará el número mayor:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

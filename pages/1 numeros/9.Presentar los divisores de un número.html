@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentar los divisores de un número</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Presentar los divisores de un número</h1>
+        <h2>codigo : javascript<br>
+            //1.declara una variable para el numero<br>
+            let numero = 12;<br>
+            2.//Usar un bucle for para iterar desde 1 hasta el número.<br>
+            for(let i = 1; i <= numero; i++) {<br>
+                3.//Dentro del bucle, usar una condición if para verificar si el número es divisible
+                por el iterador.<br>
+                if(numero % i === 0) {<br>
+                    console.log(i + " es un divisor de " + numero);<br>
+                }<br>
+            }</h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formDivisores">
+                <input type="number" id="num" placeholder="Ingresa un número">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.presentarDivisores()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuNumeros()">Regresar</button>
+                </div>
+                <div id="resultadoDivisores">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

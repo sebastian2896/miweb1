@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar espacios</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Eliminar espacios</h1>
+        <h2>codigo : javascript<br>
+            //1.Declarar la variable cadena.<br>
+            let cadena = "Hola Mundo desde Javascript";<br>
+            //2.Declarar la variable cadenaSinEspacios.<br>
+            let cadenaSinEspacios = "";<br>
+            //3.Usar un bucle for para recorrer cada carácter de la cadena.<br>
+            for (let i = 0; i < cadena.length; i++) {<br>
+                //4.Si el carácter actual no es un espacio, añadirlo a cadenaSinEspacios.<br>
+                if (cadena[i] !== " ") {<br>
+                    cadenaSinEspacios += cadena[i];<br>
+                }<br>
+            }<br>
+            console.log(cadenaSinEspacios);<br>
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formCadena">
+                <input type="text" id="cadena" placeholder="Ingresa una cadena">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.eliminarEspacios()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenucadena()">Regresar</button>
+                </div>
+                <div id="resultado">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

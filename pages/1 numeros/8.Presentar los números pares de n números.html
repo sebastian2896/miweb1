@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar si un número es par o impar</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Determinar los numeros pares dentro de una cantidad</h1>
+        <h2>codigo : javascript<br>
+           <br> let n = 10;
+           <br>//Itera desde 1 hasta n
+           <br> for (let i = 1; i <= n; i++) {
+           <br> if (n % i === 0) { //Verifica los numeros pares
+           <br> console.log(i + " es par");
+           <br> }
+           <br> }
+       <br> }
+    </header>
+    <main>
+        <section class="container">
+            <form >
+                <input type="number" id="num" placeholder="Ingresa un número">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.ParesN()">Aceptar</button>
+                  
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuNumeros()">Regresar</button>
+                </div>
+                <div id="respAr">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

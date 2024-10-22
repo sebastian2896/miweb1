@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplos de 5 en un arreglo</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Quitar a Ana del arreglo</h1>
+        <h2>codigo : javascript<br>
+           <br> let nombres = ["Juan", "Ana", "Carlos", "Ana", "Luis"];
+           <br> for (let i = 0; i < nombres.length; i++) { //1 itera a través del arreglo
+           <br> if (nombres[i] !== "Ana") { //2 verifica si el nombre no es "Ana".
+           <br> console.log(nombres[i]);
+           <br> }
+           <br> }
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form>
+                <input type="text" id="nombres" placeholder="Ingresa los nombres">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.AnaNo()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuArreglos()">Regresar</button>
+
+                </div>
+                <div id="resp">
+                    Aquí se mostrarán el promedio
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

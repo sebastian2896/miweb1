@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invertir una cadena</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Invertir una cadena</h1>
+        <h2>codigo : javascript<br>
+            //1.Declarar las variables cadena y cadenaInvertida.<br>
+            let cadena = "Hola Mundo";<br>
+            let cadenainvertida=""
+            //2.Usar un bucle for que empieza desde el último carácter (cadena.length - 1) y 
+            decrementa i hasta 0. <br>
+            for (let i = cadena.length - 1; i >= 0; i--) { <br>
+            //3.En cada iteración, añadir el carácter actual a cadenaInvertida.<br>
+                cadenaInvertida += cadena[i]; <br>
+            } <br>
+                console.log(cadenaInvertida); <br>
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formCadena">
+                <input type="text" id="cadena" placeholder="Ingresa una cadena">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.invertirCadena()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenucadena()">Regresar</button>
+
+                </div>
+                <div id="resultado">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

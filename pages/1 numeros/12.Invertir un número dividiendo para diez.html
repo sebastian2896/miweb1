@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar si un número es par o impar</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Invertir un Numero</h1>
+        <h2>codigo : javascript<br>
+           <br> let numero = 12345;
+           <br> let invertido = 0;
+           <br> //1 itera mientras numero no sea 0
+           <br> while (numero !== 0) {
+            <br> //2 obtiene el último dígito del número
+           <br> let digito = numero % 10;
+           <br>//3 agrega el dígito al número invertido
+           <br> invertido = invertido * 10 + digito;
+           <br>//4 elimina el último dígito del número
+           <br> numero = Math.floor(numero / 10);
+           <br> }
+           <br> console.log("El número invertido es " + invertido);
+    </header>
+    <main>
+        <section class="container">
+            <form >
+                <input type="number" id="numero" placeholder="Ingresa un número">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.invertido()">Aceptar</button>
+                  
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuNumeros()">Regresar</button>
+                </div>
+                <div id="resp">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

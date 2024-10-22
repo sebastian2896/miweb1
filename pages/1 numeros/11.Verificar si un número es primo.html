@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar si un número es primo</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Verificar si un número es primo</h1>
+        <h2>Un número es primo si solo tiene dos
+            divisores: 1 y el mismo número.<br>
+            //1. Declarar una variable para el número <br>
+            let numero = 7;<br>
+            let esPrimo = true;<br>
+            //2. Usar un bucle for para encontrar los divisores<br>
+            for(let i = 2; i < numero; i++) {<br>
+            //3. Usar una condición if para verificar si tiene más de dos divisores
+                if(numero % i === 0) {<br>
+                    esPrimo = false;<br>
+                    break;<br>
+                }<br>
+            }<br>
+            if(esPrimo) {<br>
+                console.log(numero + " es primo");<br>
+            } else {<br>
+                console.log(numero + " no es primo");<br>
+            }</h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formEsPrimo">
+                <input type="number" id="num" placeholder="Ingresa un número">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.esPrimo()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuNumeros()">Regresar</button>
+                </div>
+                <div id="resultadoEsPrimo">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar el mayor de dos números</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Determinar el mayor de dos números</h1>
+        <h2>codigo : javascript<br>
+            let numero1 = 5;<br>
+            let numero2 = 7;<br>
+            //1.verifica si el primer número es mayor<br>
+            if (numero1 > numero2) {<br>
+            console.log(numero1 + " es mayor que " + numero2);<br>
+            //2.verifica si el segundo numero es mayor<br>
+            } else if (numero1 < numero2) {<br>
+            console.log(numero2 + " es mayor que " + numero1);<br>
+            } else {<br>
+            //3. Si ninguna de las condiciones anteriores es verdadera, ambos números son
+            iguales.<br>
+            console.log("Los números son iguales");<br>
+            }</h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formMayorDosNumeros">
+                <input type="number" id="num1" placeholder="Ingresa el primer número">
+                <input type="number" id="num2" placeholder="Ingresa el segundo número">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.mayorDosNumeros()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuNumeros()">Regresar</button>
+                </div>
+                <div id="resultadoMayorDosNumeros">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

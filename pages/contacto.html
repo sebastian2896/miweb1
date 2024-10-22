@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Pagina Inicial</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="logo">
+        <img src="../img/fonfo.avif" alt="sin imagen" width="60px"> 
+        <h1 class="titulo">TeacherDev</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a> </li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/acerca.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <p>
+        Usuario:dverap
+      </p>
+    </header >
+    <main>
+      
+      <section>
+        <header>
+            <h2 class="titulo">Contacto</h2>
+        </header>
+        <article class="formContainer">
+          <form action="">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text">
+            </div>
+            <div>
+              <label for="edad">Edad</label>
+              <input id="edad" type="number" min="1" max="99" required maxlength="2">
+            </div>
+            <div>
+              <label for="">Sexo</label>
+              <select id="sexo">
+                <option value="m">Masculino</option>
+                <option value="f">Femenino</option>
+              </select>
+            </div>
+            <div>
+            <label>
+              <input type="checkbox" id="gusta" value="yes">
+                  Me gusta
+            </label>
+            </div>
+            <div>
+              <label for="obs">Comentario</label>
+              <textarea  id="obs" placeholder="Escribi aqui tu comentario">
+
+              </textarea>
+            </div>
+            <div>
+              <button type="button" onclick="contacto()">Aceptar</button>
+              <button>Resetear</button>
+            </div>
+          </form>
+        </article>
+      </section>

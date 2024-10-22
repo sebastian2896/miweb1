@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números pares de un arreglo recorridos desde el último al primero</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Números pares de un arreglo recorridos desde el último al primero</h1>
+        <h2>codigo : javascript<br>
+            //1. Declarar un arreglo de números ingresado por el usuario<br>
+            let numeros = [10, 15, 23, 30, 45, 50];<br>
+            //2. Recorre el arreglo desde el último elemento al primero<br>
+            for(let i = numeros.length - 1; i >= 0; i--) {<br>
+            //3. verifica Si el número es par.<br>
+            if(numeros[i] % 2 === 0) {<br>
+            console.log(numeros[i] +"es par");<br>
+                }<br>
+            }<br>
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formNumerosPares">
+                <input type="text" id="numeros" placeholder="Ingresa los números del arreglo separados por comas">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.numerosPares()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuArreglos()">Regresar</button>
+
+                </div>
+                <div id="resultadoNumerosPares">
+                    Aquí se mostrarán los números pares:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

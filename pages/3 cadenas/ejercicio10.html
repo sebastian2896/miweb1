@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir cada carácter de una cadena</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Longitud Maxima</h1>
+        <h2>codigo : javascript<br>
+            <br>let cadena = "Hola Mundo desde Javascript";
+            <br>let palabraActual = ""; 
+            <br>let longitudMaxima = 0; //1. Declarar las variables cadena, palabraActual y longitudMaxima.
+            <br>for (let i = 0; i < cadena.length; i++) { //2. Usar un bucle for para recorrer la cadena.
+            <br> if (cadena[i] === " " || i === cadena.length - 1) {
+            <br> if (i === cadena.length - 1) {
+            <br> palabraActual += cadena[i]; //3. Construir palabraActual carácter por carácter. Si se encuentra un espacio o se llega al 
+            final de la cadena, comparar la longitud de palabraActual con longitudMaxima y 
+            actualizar longitudMaxima si es necesario. Reiniciar palabraActual después de cada 
+            palabra.
+            <br> }
+            <br> if (palabraActual.length > longitudMaxima) {
+            <br> longitudMaxima = palabraActual.length;
+            <br> }
+            <br> palabraActual = "";
+            <br> } else {
+            <br> palabraActual += cadena[i];
+            <br> }
+            <br>}
+            <br>console.log(longitudMaxima);
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formCadena">
+                <input type="text" id="cadena" placeholder="Ingresa una cadena">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.LongitudMaxima()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenucadena()">Regresar</button>
+
+                </div>
+                <div id="resp">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentar la serie de Fibonacci de n números</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Presentar la serie de Fibonacci de n números</h1>
+        <h2>codigo : javascript<br>
+            //1.Declarar una variable para n.<br>
+            let n = 10;<br>
+            let a = 0<br>
+            let b=1<br>
+
+            console.log(a)<br>
+            console.log(b)<br>
+            //2.itera desde 2 hasta n - 1.<br>
+            for(let i = 2; i < n; i++) {<br>
+            //3.calcula el siguiente número de la serie.
+            let c = a+b;<br>
+            console.log(c);<br>
+            //4.actualizan los valores para la siguiente iteración<br>
+
+            a=b<br>
+            b=c<br>
+            
+            }<br>
+            console.log(fib);<br>
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formFibonacci">
+                <input type="number" id="num" placeholder="Ingresa un número">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.fibonacci()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuNumeros()">Regresar</button>
+                </div>
+                <div id="resultadoFibonacci">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

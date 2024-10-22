@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplos de 5 en un arreglo</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Múltiplos de 5 en un arreglo</h1>
+        <h2>codigo : javascript<br>
+            //1. Declarar un arreglo de números<br>
+            let numeros = [10,15,23,25,30,45,50];<br>
+            let multiplos = [];<br>
+            //2.itera sobre cada número en el arreglo.<br>
+            for(let i = 0; i < numeros.length; i++) {<br>
+            //3.verifica si el número es múltiplo de 5<br>
+                if(numeros[i] % 5 === 0) {<br>
+                    console.log(numeros[i]+ "es multiplo de 5");<br>
+                }<br>
+            }<br>
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formMultiplos">
+                <input type="text" id="numeros" placeholder="Ingresa los números del arreglo separados por comas">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.multiplosDeCinco()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuArreglos()">Regresar</button>
+
+                </div>
+                <div id="resultadoMultiplos">
+                    Aquí se mostrarán los múltiplos de 5:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar si un número es par o impar</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Determinar si es mayor de edad</h1>
+        <h2>codigo : javascript<br>
+            <br> let edad = document.getElementById('edad').value
+            <br>edad = parseInt(edad)
+            <br> let explicacion = document.getElementById('explicacion')
+            <br>explicacion.innerHTML = ''
+            <br> if(edad >=18){
+                <br>     explicacion += `La edad de ${edad} al cumplir la condicion es mayor de edad`
+                <br> }
+                <br> else{
+               <br> explicacion += `La edad de ${edad} al cumplir no la condicion no es mayor de edad`
+               <br> }
+               <br>explicacion.innerHTML = explicacion
+               <br> }<br>
+    </header>
+    <main>
+        <section class="container">
+            <form >
+                <input type="number" id="edad" placeholder="Ingresa un número">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.mayorEdad()">Aceptar</button>
+                  
+                    <button type="button" class="boton" onclick="ope.regresarAlMenuNumeros()">Regresar</button>
+                </div>
+                <div id="resp">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

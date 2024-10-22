@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir cada carácter de una cadena</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Contar caracteres especificos</h1>
+        <h2>codigo : javascript<br>
+           <br> let cadena = "Hola Mundo";
+           <br> let caracter = "o";
+           <br> let contador = 0; //1 Declarar las variables cadena, caracter y contador.
+           <br> for (let i = 0; i < cadena.length; i++) { //2 Usar un bucle for para recorrer la cadena.
+           <br>  if (cadena[i] === caracter) { //3 Si el carácter actual es igual a caracter, incrementar el contador.
+           <br>  contador++;
+           <br>  }
+           <br> }
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form >
+                <input type="text" id="cadena" placeholder="Ingresa una cadena">
+                <input type="text" id="caracter" placeholder="Ingresa un caracter a buscar">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.ContarCaracter()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenucadena()">Regresar</button>
+
+                </div>
+                <div id="resp">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

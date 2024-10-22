@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplazar espacios con guiones</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Reemplazar espacios con guiones</h1>
+        <h2>codigo : javascript<br>
+            //1.Declarar la variable y cadena modificada<br>
+            let cadena = "Hola Mundo desde Javascript"; 
+            let cadenaModificada = "";<br>
+            //2.Usar un bucle for para recorrer cada carácter de la cadena.<br>
+            for (let i = 0; i < cadena.length; i++) { <br>
+            //3.Si el carácter actual es un espacio, añadir un guion a cadenaModificada, de lo <br>
+            contrario, añadir el carácter actual. <br>
+                if (cadena[i] === " ") { <br>
+                cadenaModificada += "-"; <br>
+                } else { <br>
+                cadenaModificada += cadena[i]; <br>
+                } <br>
+            } <br>
+                console.log(cadenaModificada);<br>
+        </h2> <br>
+    </header>
+    <main>
+        <section class="container">
+            <form id="formCadena">
+                <input type="text" id="cadena" placeholder="Ingresa una cadena">
+                <div class="botones">                
+                    <button type="button" class="boton" onclick="ope.reemplazarEspacios()">Aceptar</button>
+                    <button type="button" class="boton" onclick="ope.regresarAlMenucadena()">Regresar</button>
+
+                </div>
+                <div id="resultado">
+                    Aquí se mostrará el resultado:
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h6></h6>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
